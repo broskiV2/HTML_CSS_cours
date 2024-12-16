@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Déclaration du jeu de caractères pour la page (UTF-8) -->
     <meta charset="UTF-8">
+
+    <!-- Définition de la viewport pour rendre le site responsive sur différents appareils (mobile, tablette, etc.) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titre entete -->
+
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
     <title>Cours 1 - BTS SIO SLAM</title>
-    <!-- icon entete -->
+
+    <!-- Lien vers l'icône de la page (favicon) qui apparaîtra dans l'onglet du navigateur -->
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <!-- Importation CSS -->
+
+    <!-- Importation du fichier CSS externe pour styliser la page -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Début de la barre de navigation -->
     <nav>
+        <!-- Liste non ordonnée pour les liens de navigation -->
         <ul>
-         <li><a href="#p1">Partie 1</a></li>
-         <li><a href="#p2">Partie 2</a></li>
-         <li><a href="#p3">Partie 3</a></li>
-         <li><a href="#p4">Partie 4</a></li>
+            <!-- Liens vers les différentes sections de la page -->
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#lo">Les listes ordonnées</a></li>
+            <li><a href="#img">Les images</a></li>
+            <li><a href="#Lien">Les liens</a></li>
         </ul>
      </nav>
-    <!-- Commentaire H1 -->
-    <h1 id="p1">Cours 1 HTML/CSS</h1>
+    <!-- Titre principal de la première section de la page -->
+    <h1 id="Introduction">Cours 1 HTML/CSS</h1>
 
- <p>
-    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio perspiciatis, eos cumque labore impedit quisquam aspernatur minus modi voluptate. Quae, nobis culpa cumque fuga harum molestiae minus nesciunt. Ut?</em>
-</p>
- <p>
-    <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quo sint laudantium omnis et nam in provident quasi! Ullam neque natus voluptates nostrum molestias commodi laudantium blanditiis quas eveniet debitis?</strong>
-</p>
- <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate id neque velit suscipit a possimus veritatis, blanditiis autem earum nesciunt. Sunt beatae quos quas obcaecati ad illum incidunt repellat.
-</p>
- <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, qui ab repudiandae iusto, impedit voluptates neque eligendi facilis ratione voluptatum distinctio doloribus libero ad suscipit numquam beatae excepturi accusantium placeat quod! Deserunt velit qui doloribus.
-</p>
-<section>
-    <h2 id="p2">Les listes ordonnées</h2>
-    <ol>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem, ipsum.</li>
-    </ol>
-</section>
+    <!-- Premier paragraphe avec une mise en italique (em) pour souligner l'importance ou l'emphase -->
+    <p>
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio perspiciatis, eos cumque labore impedit quisquam aspernatur minus modi voluptate. Quae, nobis culpa cumque fuga harum molestiae minus nesciunt. Ut?</em>
+    </p>
 
-<section>
-    <h3 id="p3">Les images</h3>
-    <img src="./img/icon.png" alt="image icon" height="200px" width="auto">
-    <legend><em>image du log HTML5</em></legend>
-</section>
+    <!-- Deuxième paragraphe avec un texte en gras (strong) pour indiquer un texte important -->
+    <p>
+        <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quo sint laudantium omnis et nam in provident quasi! Ullam neque natus voluptates nostrum molestias commodi laudantium blanditiis quas eveniet debitis?</strong>
+    </p>
 
-<section>
-    <h4 id="p4">Les Liens</h4>
-    <a target="_blank" href="https://en.wikipedia.org/wiki/HTML">En savoir plus sur HTML5</a>
-</section>
+    <!-- Paragraphe standard avec un texte de type Lorem Ipsum -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate id neque velit suscipit a possimus veritatis, blanditiis autem earum nesciunt. Sunt beatae quos quas obcaecati ad illum incidunt repellat.
+    </p>
 
-<section>
-    <h4>Les vidéos</h4>
-    <video src="./vidéo/video.mp4" width="700px" controls loop autoplay>Vidéo HTML</video>
-</section>
+    <!-- Autre paragraphe Lorem Ipsum pour la présentation de contenu -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, qui ab repudiandae iusto, impedit voluptates neque eligendi facilis ratione voluptatum distinctio doloribus libero ad suscipit numquam beatae excepturi accusantium placeat quod! Deserunt velit qui doloribus.
+    </p>
+
+    <!-- Début de la deuxième section de la page (Les listes ordonnées) -->
+    <section  id="lo">
+        <!-- Titre de la section (h2) avec un identifiant pour la navigation -->
+        <h2>Les listes ordonnées</h2>
+        <!-- Liste ordonnée (numérotée) -->
+        <ol>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum.</li>
+        </ol>
+    </section>
+
+    <!-- Début de la troisième section (Les images) -->
+    <section id="img">
+        <!-- Titre de la section (h3) avec un identifiant pour la navigation -->
+        <h3>Les images</h3>
+        <!-- Inclusion d'une image avec une description alternative (alt) et une taille définie -->
+        <img src="./img/icon.png" alt="image icon" height="200px" width="auto">
+        <!-- Légende pour l'image en italique -->
+        <legend><em>image du log HTML5</em></legend>
+    </section>
+
+    <!-- Début de la quatrième section (Les liens) -->
+    <section id="Lien">
+        <!-- Titre de la section (h4) avec un identifiant pour la navigation -->
+        <h4>Les Liens</h4>
+        <!-- Lien externe vers Wikipedia pour en savoir plus sur HTML5 -->
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTML">En savoir plus sur HTML5</a>
+    </section>
+
+    <!-- Début de la section "Les vidéos" -->
+    <section>
+        <h4>Les vidéos</h4>
+        <!-- Inclusion d'une vidéo avec des attributs pour contrôler la lecture (lecture en boucle et lecture automatique) -->
+        <video src="./vidéo/video.mp4" width="700px" controls loop autoplay>Vidéo HTML</video>
+    </section>
+
+    <!-- Début de la section "Les Formulaires" -->
+    <section>
+        <h4>Les Formulaires</h4>
+        <!-- Formulaire pour collecter des informations utilisateur -->
+        <form action="">
+            <!-- Champ de saisie pour le nom de l'utilisateur -->
+            <label for="name">Nom</label>
+            <input id="name" type="text" placeholder="John Doe">
+            <br>
+            <!-- Champ de saisie pour l'adresse e-mail -->
+            <label for="">Mail</label>
+            <input type="email" name="" id="" placeholder="votremail@mail.com">
+            <br>
+            <!-- Champ de saisie pour la date de naissance -->
+            <label for="">Date de naissance</label>
+            <input type="date" name="" id="">
+            <br>
+            <!-- Case à cocher pour accepter les CGV/CGU -->
+            <label for="">Accepter CGV/CGU</label>
+            <input type="radio" name="" id="">
+            <br>
+            <!-- Bouton pour soumettre le formulaire -->
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
 </body>
 </html>

@@ -1,0 +1,212 @@
+/* ===============================
+   Global Settings
+   =============================== */
+
+/* Réinitialisation des marges et paddings par défaut pour une mise en page propre */
+* {
+    margin: 0;                      /* Supprime les marges par défaut */
+    padding: 0;                     /* Supprime le padding par défaut */
+    box-sizing: border-box;         /* Assure que les bordures et les paddings sont inclus dans la taille totale des éléments */
+}
+
+/* Style général pour le body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne et claire */
+    background-color: #fafafa;         /* Fond blanc cassé doux */
+    color: #333;                       /* Texte gris foncé pour une bonne lisibilité */
+    line-height: 1.6;                  /* Hauteur de ligne pour améliorer la lisibilité */
+    padding: 20px;                     /* Espacement intérieur autour de tout le contenu */
+    font-size: 16px;                   /* Taille de police par défaut */
+}
+
+/* ===============================
+   Navbar (Barre de navigation)
+   =============================== */
+
+/* Style pour la barre de navigation */
+nav {
+    background-color: #007bff;         /* Fond bleu clair pour la navigation */
+    padding: 15px 30px;                /* Espacement interne autour des liens */
+    border-radius: 8px;                /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    margin-bottom: 20px;               /* Espacement sous la barre de navigation */
+}
+
+/* Style des éléments de la liste dans la barre de navigation */
+nav ul {
+    list-style: none;                 /* Supprime les puces de la liste */
+    padding: 0;                       /* Supprime le padding par défaut */
+    margin: 0;                        /* Supprime la marge par défaut */
+    text-align: center;               /* Centrer le contenu de la barre */
+}
+
+/* Style des éléments de la liste */
+nav ul li {
+    display: inline-block;             /* Affiche les éléments en ligne */
+    margin-right: 30px;                /* Espacement entre chaque lien */
+}
+
+/* Style des liens dans la barre de navigation */
+nav ul li a {
+    text-decoration: none;             /* Supprime le soulignement des liens */
+    color: white;                     /* Couleur blanche pour les liens */
+    font-size: 18px;                   /* Taille de la police des liens */
+    padding: 10px 20px;                /* Espacement autour des liens */
+    border-radius: 5px;                /* Bords arrondis pour les liens */
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide pour l'effet hover */
+}
+
+/* Effet au survol des liens de la barre de navigation */
+nav ul li a:hover {
+    background-color: #4b6cb7;         /* Change le fond au survol en orange vif */
+    color: #fff;                       /* Garde le texte blanc */
+}
+
+/* ===============================
+   Sections (Contenu principal)
+   =============================== */
+
+/* Style des sections de contenu */
+section {
+    margin-bottom: 40px;              /* Espacement entre les sections */
+    background-color: #fff;           /* Fond blanc pour chaque section */
+    padding: 20px;                    /* Espacement interne */
+    border-radius: 8px;               /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Ombre légère */
+}
+
+/* Style des titres de chaque section (h2, h3, h4) */
+h1, h2, h3, h4 {
+    color: #333;                      /* Couleur du texte pour les titres */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne et claire */
+    margin-bottom: 15px;              /* Espacement sous chaque titre */
+}
+
+/* ===============================
+   Les paragraphes
+   =============================== */
+
+/* Style des paragraphes */
+p {
+    font-size: 1.1rem;                 /* Taille de la police des paragraphes */
+    color: #666;                       /* Couleur de texte gris clair pour le corps du texte */
+    line-height: 1.6;                  /* Hauteur de ligne pour aérer le texte */
+    margin-bottom: 20px;               /* Espacement sous chaque paragraphe */
+}
+
+/* ===============================
+   Les Images
+   =============================== */
+
+/* Style pour les images */
+img {
+    max-width: 100%;                   /* Limite la largeur à 100% du parent */
+    height: auto;                      /* Hauteur automatique pour conserver les proportions */
+    border-radius: 8px;                /* Bords arrondis pour les images */
+    margin-bottom: 20px;               /* Espacement sous les images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour des images */
+}
+
+/* ===============================
+   Les vidéos
+   =============================== */
+
+/* Style pour les vidéos */
+video {
+    max-width: 100%;                   /* Limite la largeur à 100% du parent */
+    height: auto;                      /* Hauteur automatique pour conserver les proportions */
+    margin-bottom: 20px;               /* Espacement sous la vidéo */
+    border-radius: 8px;                /* Bords arrondis pour la vidéo */
+}
+
+/* ===============================
+   Formulaires
+   =============================== */
+
+/* Style pour les formulaires */
+form {
+    background-color: #fff;            /* Fond blanc pour le formulaire */
+    padding: 30px;                     /* Espacement interne du formulaire */
+    border-radius: 8px;                /* Bords arrondis pour le formulaire */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+    width: 100%;                       /* Largeur 100% du parent */
+    max-width: 600px;                  /* Largeur maximale du formulaire */
+    margin: 0 auto;                    /* Centrer le formulaire sur la page */
+}
+
+/* Style pour les labels des champs de formulaire */
+form label {
+    font-weight: bold;                 /* Texte en gras pour les labels */
+    margin-bottom: 5px;                 /* Espacement sous les labels */
+    display: block;                    /* Affiche les labels en bloc */
+    color: #333;                       /* Couleur de texte pour les labels */
+}
+
+/* Style pour les champs de texte, email, et date */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: 100%;                       /* Largeur à 100% du parent */
+    padding: 10px;                     /* Espacement interne pour les champs */
+    margin-bottom: 15px;               /* Espacement sous chaque champ */
+    border: 1px solid #ddd;            /* Bordure gris clair */
+    border-radius: 5px;                /* Bords arrondis */
+    font-size: 16px;                   /* Taille de la police dans les champs */
+    transition: border-color 0.3s;     /* Transition fluide pour le focus */
+}
+
+/* Effet au focus sur les champs de formulaire */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus {
+    border-color: #1e3a8a;            /* Change la couleur de la bordure au focus */
+    outline: none;                    /* Supprime le contour par défaut */
+}
+
+/* Style pour le bouton radio */
+form input[type="radio"] {
+    margin-right: 10px;                /* Espacement à droite des boutons radio */
+}
+
+/* Style pour le bouton de soumission */
+form input[type="submit"] {
+    background-color: #4b6cb7;         /* Fond orange pour le bouton */
+    color: white;                      /* Texte blanc */
+    border: none;                      /* Supprime la bordure par défaut */
+    padding: 15px 25px;                /* Espacement interne du bouton */
+    border-radius: 5px;                /* Bords arrondis */
+    cursor: pointer;                   /* Curseur pointeur au survol */
+    font-size: 18px;                   /* Taille de la police du bouton */
+    transition: background-color 0.3s; /* Transition fluide pour le survol */
+}
+
+/* Changement de couleur au survol du bouton de soumission */
+form input[type="submit"]:hover {
+    background-color: #4b6cb7;         /* Change la couleur de fond au survol */
+}
+
+/* ===============================
+   Responsive Design (Adaptation mobile)
+   =============================== */
+
+/* Pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 768px) {
+    /* Style de la barre de navigation sur mobile : empile les éléments */
+    nav ul {
+        display: flex;                /* Utilisation de Flexbox pour aligner les liens horizontalement */
+        flex-direction: column;       /* Les éléments sont empilés verticalement */
+        align-items: center;          /* Centre les éléments horizontalement */
+    }
+
+    /* Élargir les champs de formulaire sur mobile */
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"] {
+        width: 100%;                  /* Les champs prennent toute la largeur disponible */
+    }
+
+    /* Ajuster le padding des sections pour les petits écrans */
+    section {
+        padding: 15px;                /* Réduire l'espacement interne */
+    }
+}
